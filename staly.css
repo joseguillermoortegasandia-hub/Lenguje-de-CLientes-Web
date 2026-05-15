@@ -1,20 +1,89 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;  
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body{
-  min-height: 100vh;
+
+body {
+  background: #f5f6fb;
+  color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f3f3f3;
+  padding: 20px;
 }
-header{
-  text-align: center;
-  background-color: #2a137d;
-  padding: 20px 40px;
-  color: white;
+
+.contenido {
+  width: min(720px, 100%);
+  display: grid;
+  gap: 20px;
+}
+
+.tarjeta-intro,
+.tarjeta-form {
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 26px;
+  background: white;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-intro h1 {
+  font-size: 2rem;
+  color: #1f1d5a;
+}
+
+.tarjeta-intro p {
+  margin-top: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4f4d73;
+}
+
+.tarjeta-form h2 {
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  color: #1f1d5a;
+}
+
+.tarjeta-form p {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: #4f4d73;
+}
+
+  .cuadricula-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.etiqueta-habilidad {
+  background: #f0efff;
+  color: #5e4bff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.item-linea-tiempo {
+  padding: 12px 0;
+  border-bottom: 1px solid #eaeaef;
+}
+
+.item-linea-tiempo:last-child {
+  border-bottom: none;
+}
+
+.anio-linea-tiempo {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #8884ff;
+  margin-bottom: 4px;
+}
+
+.desc-linea-tiempo {
+  font-size: 0.96rem;
+  color: #4f4d73;
 }
